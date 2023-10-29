@@ -36,7 +36,7 @@ import TrainCoordinaterBoard from "./pages/Coordinater/TrainCoordinaterBoard";
 import TCoDash from "./pages/Coordinater/TCoDash";
 import TCAddOrder from "./pages/Coordinater/TCAddOrder";
 import AddOrderPage from "./pages/CustomerSide/AddOrderPage";
-
+import AdminViewReports from "./pages/Admin/AdminViewReports";
 function App() {
   return (
     <Router>
@@ -44,6 +44,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/customerLogin" element={<CustomerLoginPage />} />
         <Route path="/adminLogin" element={<AdminLogin />} />
+        <Route path="/viewReport" element={<AdminViewReports/>}/>
         <Route path="/coordinaterLogin" element={<CoOrdinaterLogin />} />
         <Route
           path="/customerRegister"
