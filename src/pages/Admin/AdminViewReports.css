@@ -1,20 +1,18 @@
 
-
-/* Add any additional styling for other elements inside the overlay as needed */
-h1,h2 {
-  color: rgb(247, 241, 241); /* Set text color to white or any color that suits your design */
+.header1,.header2 {
+  color: rgb(247, 241, 241); 
   margin-top:10px;
   margin-left: 20px;
-  text-align: center;
+  text-align: center; 
 }
 
-.select,h3{
+.select{
   color: rgb(19, 18, 18);
   text-align: center;
 }
 
 
-.dialog-box {
+.dialog-box{
   margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -33,15 +31,15 @@ h1,h2 {
 
 .barChart,
 .pieChart {
-  flex: 1;
-  /* border: 1px solid #ddd; */
-  /* padding: 10px; */
+
+  border: 1px solid #ddd;
+  padding: 10px;
   margin: 5px;
   background-color: #e3dbdb; /* Black background for the barchart component */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* White box shadow for contrast */
-  max-width: 400px; /* Adjust the maximum width as needed */
+  max-width: 300px; /* Adjust the maximum width as needed */
   margin: 0 auto; /* Center the container horizontally */
   text-align: center; /* Center the chart within the container */
 }
@@ -53,7 +51,6 @@ h1,h2 {
 }
 
 
-/* TabbedTable.css */
 
 .tabbed-table-container {
   max-width: 600px;

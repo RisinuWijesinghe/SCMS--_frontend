@@ -1,9 +1,8 @@
-// TabbedTable.js
 
 import React, { useState } from 'react';
 import './AdminViewReports.css';
 
-const cities = ['Colombo', 'Kandy', 'Galle']; // Add your cities here
+const cities = ['Colombo', 'Kandy', 'Galle']; 
 
 const TabbedTable = () => {
   const [activeCity, setActiveCity] = useState(cities[0]);

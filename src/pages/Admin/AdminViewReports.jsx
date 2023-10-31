@@ -4,7 +4,7 @@ import './AdminViewReports.css';
 import  CityDialog from './CityTableComp';
 
 function ViewReport() {
-  const [selectedYear, setSelectedYear] = useState('2023'); // Initial selected year
+  const [selectedYear, setSelectedYear] = useState('2023'); 
 
   const handleYearChange = (event) => {
     setSelectedYear(event.target.value);
@@ -254,7 +254,7 @@ function ViewReport() {
 
   return (
     <div >
-      <h1>Sales Report</h1>
+      <h1 className='header1'>Sales Report</h1>
       <select  className="select-list" value={selectedYear} onChange={handleYearChange}>
         <option value="2022">2022</option>
         <option value="2023">2023</option>
@@ -264,7 +264,7 @@ function ViewReport() {
       
       <div className="one-line">
         <div className="dialog-box">
-            <h3>Quaterly Revenue</h3>
+            <h3 className='header3'>Quaterly Revenue</h3>
             <div className='barchart'>
             <BarChart selectedYear={selectedYear} />
             </div>
@@ -272,7 +272,7 @@ function ViewReport() {
       
       
         <div className="dialog-box">
-            <h3>Items With Most Sales</h3>
+            <h3 className='header3'>Items With Most Sales</h3>
             <div className='pieChart'>
             <PieChart selectedYear={selectedYear} />
             </div>
@@ -281,21 +281,21 @@ function ViewReport() {
       </div>
 
       
-      <h2>Sales based cities</h2>
+      <h2 className='header2'>Sales based cities</h2>
       <div className="dialog-box">
         <CityDialog/>     
       </div > 
 
-      <h2>Working Hours of Drivers and assistants</h2>    
+      <h2 className='header2'>Working Hours of Drivers and assistants</h2>    
       <div className="dialog-box">
         <WorkingHoursTable/>
       </div>    
 
-      <h2>Trucks Used Hours</h2>    
+      <h2 className='header2'>Trucks Used Hours</h2>    
       <div className="dialog-box">
         < TruckHoursTable/>
       </div> 
-      <h2>View Customer Orders</h2>
+      <h2 className='header2'>View Customer Orders</h2>
       <OrderButton/>
 
     </div>
